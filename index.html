@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          body{
+    background-color: aquamarine;
+    text-align: center;
+}  
+        </style>
+    </head>
+    <body>
+        <h1>Random Nature Pictures</h1>
+        <hr>
+        <img src="" id="random" height="400px" width="400px">
+        <hr>
+        <button onclick="bye()">Display</button>
+        <hr>
+        <script>
+            function bye(){
+                var arr =["https://garyhartblog.com/wp-content/uploads/2013/06/c6g2497tunnelviewrainbow3_blog.jpg?w=800&h=533","https://i.redd.it/b0jhskw3buz81.jpg","https://live.staticflickr.com/1760/41797222505_d9ac60feab_h.jpg","https://preview.redd.it/nature-real-life-v0-1e680cehpwtc1.jpg?width=640&crop=smart&auto=webp&s=417b3fe45d67ae4adf068c2c16df282ffe6946b9","https://e0.pxfuel.com/wallpapers/516/620/desktop-wallpaper-nature-real.jpg","https://st3.depositphotos.com/1030327/16164/i/450/depositphotos_161644336-stock-photo-autumn-forest-reflected-in-amazing.jpg","https://thumbs.dreamstime.com/b/five-flower-lake-autumn-sunrise-time-jiuzhaigou-nature-reserve-jiuzhai-valley-national-park-china-96675186.jpg","https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?cs=srgb&dl=pexels-pixabay-206359.jpg&fm=jpg"]
+                var a=Math.floor(Math.random()*arr.length)
+            document.getElementById("random").src= arr[a]
+            }
+        </script>
+    </body>
+</html>
